@@ -7,8 +7,7 @@ import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckProfileContentTest  extends BaseTest {
-
+public class CheckProfileContentTest extends BaseTest {
 
     @Test(priority = 1)
     public void userProfile() {

@@ -5,9 +5,12 @@
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="UiTests.LoginPageTest"/>
-            <class name="UiTests.BaseTest"/>
             <class name="UiTests.MainPageTest"/>
             <class name="UiTests.RegistrationPageTest"/>
+            <class name="UiTests.AnnouncementEditTest"/>
+            <class name="UiTests.CheckProfileContentTest"/>
+            <class name="UiTests.JobProfileTest"/>
+            <class name="UiTests.UserProfileTest"/>
         </classes>
     </test>
 </suite>
