@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Suite" verbose="1"  parallel="false">
-    <test name="LoginTest" parallel="false" thread-count="5">
-        <parameter name="browser" value="${browser}"></parameter>
-        <classes>
-        <class name="org.example.Main"/>
-        </classes>
+    <test name="RestApiTest" parallel="false" thread-count="5">
+      <parameter name="browser" value="${browser}"></parameter>
+        <packages>
+            <package name="src/test/java/RestApi"/>
+        </packages>
     </test>
 </suite>

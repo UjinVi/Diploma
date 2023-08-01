@@ -9,15 +9,15 @@ import java.io.IOException;
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
 
-
 public class AuthControllerTest {
 
     private AuthController authController;
 
     @BeforeClass
     public void setup() {
-        String baseUrl = "https://freelance.lsrv.in.ua/api";
-        authController = new AuthController(TestConfig.BASE_URL, TestConfig.BEARER_TOKEN);
+        String baseUrl = TestConfig.BASE_URL;
+        String bearerToken = TestConfig.BEARER_TOKEN;
+        authController = new AuthController(baseUrl, bearerToken);
     }
 
     @Test
@@ -43,5 +43,6 @@ public class AuthControllerTest {
         Assert.assertEquals(response.statusCode(), 200, "Запрос на вход завершился неудачно. Код ответа: " + response.statusCode());
     }
 }
+
 
 
