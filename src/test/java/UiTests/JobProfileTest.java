@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class JobProfileTest extends BaseTest {
-
     @Test(priority = 1)
     public void userProfile() {
         driver.get(BASE_URL + "/login");

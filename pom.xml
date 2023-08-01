@@ -24,6 +24,7 @@
         <extentReportVersion>1.0.7</extentReportVersion>
     </properties>
 
+
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>

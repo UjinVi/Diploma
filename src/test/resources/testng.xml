@@ -3,8 +3,11 @@
 <suite name="Suite" verbose="1"  parallel="false">
     <test name="RestApiTest" parallel="false" thread-count="5">
       <parameter name="browser" value="${browser}"></parameter>
-        <packages>
-            <package name="src/test/java/RestApi"/>
-        </packages>
+        <classes>
+            <class name="RestApi.AuthControllerTest"/>
+            <class name="RestApi.CommentControlTest"/>
+            <class name="RestApi.JobControllerTest"/>
+            <class name="RestApi.UserControllerTest"/>
+        </classes>
     </test>
 </suite>
